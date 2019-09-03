@@ -1,13 +1,3 @@
-in this iteration, we use the [ckmeans](http://simplestatistics.org/docs/#ckmeans) algorithm from the [simple-statistics](http://simplestatistics.org/) package to cluster our data. we pick the **minimum** value of each cluster as a break.  we then use these breaks with a [quantile](https://github.com/d3/d3-scale/blob/master/README.md#quantile-scales) scale to map values in the data to colors on the choropleth map.
-
-this is method is my current favorite way to create breaks, or color thresholds, for a choropleth map.
-
-🎩 [@Elijah_Meeks](https://twitter.com/Elijah_Meeks) for [the idea](https://d3js.slack.com/archives/help/p1474482980000316) to try the [ckmeans](http://simplestatistics.org/docs/#ckmeans) algorithm, as it seems to be the new hotness in the choropleth map breaks [scene](https://d3js.slack.com/)
-
-a further 🙏 to [@recifs](https://twitter.com/recifs) for [talking through](https://d3js.slack.com/archives/help/p1474484449000325) where in the [ckmeans](http://simplestatistics.org/docs/#ckmeans) clusters its reasonable to pick breaks from.  
-tl;dr `any number between max(class n) and min(class n+1) is OK`
-
-do check out the other examples in this `world map` series:  
 
 [world map 00 original example](https://bl.ocks.org/jeremycflin/b43ab253f3ae02dced07)  
 [world map 01 fix tooltip value](https://bl.ocks.org/micahstubbs/01529b106c93f9b649c4006de5c79b80)  
